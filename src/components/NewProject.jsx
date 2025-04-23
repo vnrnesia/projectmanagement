@@ -4,10 +4,11 @@ import Modal from "./Modal";
 
 export default function NewProject({ onAdd, onCancel }) {
   const modal = useRef();
+  const title = useRef();
+  const description = useRef();
+  const dueDate = useRef();
 
-  const title = useState("");
-  const description = useState("");
-  const dueDate = useRef("");
+  
 
   function handleCancelAddProject() {
     setProjectsState((prevState) => {
